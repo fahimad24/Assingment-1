@@ -141,7 +141,8 @@ nav .nav-links {
 }
 
 .info-content p,
-.info-card p {
+.info-card p,
+.solution-content p {
   font-size: 16px;
   line-height: 30px;
   text-align: center;
@@ -151,23 +152,21 @@ nav .nav-links {
 
 .info-cards {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   gap: 24px;
 }
 
 .info-card {
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5px;
   text-align: center;
   border-radius: 8px;
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.06);
-  padding: 60px 40px 40px 40px;
+  padding: 20px;
 }
 
-.info-card div {
+.info-img {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -175,6 +174,7 @@ nav .nav-links {
   width: 60px;
   height: 60px;
   border-radius: 50%;
+  margin-top: 30px;
 }
 
 .info-card h3 {
@@ -182,4 +182,53 @@ nav .nav-links {
   font-size: 24px;
   font-weight: 600;
   line-height: 29px;
+}
+
+/* Solution Section */
+
+.solution-section {
+  display: flex;
+  align-items: center;
+  margin: 120px 0;
+  gap: 60px;
+}
+
+.solution-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 500px;
+}
+
+.solution-content h3 {
+  font-size: 16px;
+  color: rgba(70, 145, 101, 1);
+  font-weight: 600;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.solution-content h2 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+  margin: 10px 0;
+}
+
+.solution-content p {
+  text-align: left;
+  margin-bottom: 34px;
+}
+
+.solution-section ul {
+  list-style: none;
+  list-style-image: url(../assets/CheckCircle.png);
+  padding-left: 20px;
+}
+
+.solution-section ul li {
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 16px;
+  vertical-align: middle;
 }
