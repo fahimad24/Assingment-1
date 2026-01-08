@@ -27,6 +27,10 @@ nav .nav-links {
   color: black;
 }
 
+.nav-links a:hover {
+  color: rgba(70, 145, 101, 1);
+}
+
 .primary-btn {
   background: rgba(70, 145, 101, 1);
   color: white;
@@ -39,6 +43,81 @@ nav .nav-links {
   line-height: 19px;
 }
 
+.secondary-btn {
+  background: transparent;
+  color: white;
+  padding: 10px 16px;
+  border: 2px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+}
+
 .primary-btn:hover {
   background: rgb(88, 180, 126);
+}
+
+.secondary-btn:hover {
+  background: white;
+  color: rgba(70, 145, 101, 1);
+}
+
+.hero-section {
+  background-image: url(../assets/hero-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 170px;
+  background-color: #f5f5f5;
+  text-align: center;
+  color: white;
+  gap: 22px;
+}
+
+.hero-point {
+  padding: 8px 14px;
+  background-color: #fff;
+  color: rgba(70, 145, 101, 1);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hero-point div {
+  width: 6px;
+  height: 6px;
+  background-color: rgba(70, 145, 101, 1);
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px 5px rgba(70, 145, 101, 0.4);
+}
+
+.hero-section h1 {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 84px;
+  text-transform: capitalize;
+}
+
+.hero-section h1 span {
+  color: rgba(70, 145, 101, 1);
+}
+
+.hero-section p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  max-width: 680px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
 }
