@@ -9,7 +9,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 1rem 0;
   background-color: #ffffff;
   margin: 0 120px;
 }
@@ -120,4 +120,66 @@ nav .nav-links {
   gap: 16px;
   justify-content: center;
   align-items: center;
+}
+
+/* main content */
+
+.main-content {
+  max-width: 1480px;
+  margin: 0 auto;
+}
+
+.info-section .info-content {
+  padding: 80px 0 60px;
+}
+
+.info-content h2 {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 58px;
+}
+
+.info-content p,
+.info-card p {
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  margin-top: 16px;
+  color: #627382;
+}
+
+.info-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.06);
+  padding: 60px 40px 40px 40px;
+}
+
+.info-card div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(249, 85, 85, 1);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.info-card h3 {
+  margin-top: 16px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
 }
