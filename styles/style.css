@@ -225,7 +225,6 @@ nav .nav-links {
 
 .solution-section ul {
   list-style: none;
-  list-style-image: url(../assets/CheckCircle.png);
   padding-left: 20px;
 }
 
@@ -234,6 +233,19 @@ nav .nav-links {
   line-height: 30px;
   margin-bottom: 16px;
   vertical-align: middle;
+}
+
+.solution-section ul li::before {
+  position: relative;
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  top: 4px;
+  margin-right: 10px;
+  background-image: url(../assets/CheckCircle.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 /* Call to Action Section */
